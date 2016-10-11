@@ -1,0 +1,52 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+body {
+  margin: 0 auto;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+  color: #555;
+}
+
+header{
+  text-align: center !important; 
+  background-image:url("../images/banner6.jpg");
+}
+
+h1,
+h2,
+strong {
+  
+  padding-top: 1em;
+  color: #3bb;
+}
+
+.conteiner{
+  background-color: #fff;
+  width: 100%;
+}
+
+h3 {
+  color: #333;
+}
+section{
+  padding: 1em;
+}
+nav ul li a {
+  text-decoration: none;
+}
+
+p{
+  text-align: justify;
+}
+
+@media screen and (min-width:400px ){
+  body{
+    padding:0em 3em;
+    background-color:#eee;
+  }
+
+
+}
+
+
+
