@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/amanda07511/Project/issues"
   },
-  "homepage": "https://github.com/amanda07511/Project#readme"
+  "homepage": "https://github.com/amanda07511/Project#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  }
 }
