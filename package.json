@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "gulp": "^3.9.1",
+    "gulp-css-scss": "^0.1.0",
     "gulp-sass": "^2.3.2"
   }
 }
