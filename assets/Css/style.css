@@ -26,52 +26,84 @@ header {
   text-align: center;
   background-image: url("../images/banner6.jpg"); }
 
-header nav {
-  width: 50%;
-  right: -100%;
-  margin: 0px auto;
-  position: fixed;
-  background: #ACE6C0; }
-
-header nav ul {
-  overflow: hidden;
-  list-style: none; }
-
-header nav ul li {
-  display: block;
-  float: none; }
-
-header nav ul li a {
-  color: #fff;
-  padding: 1em;
-  display: block;
-  text-decoration: none; }
-
-.menu_bar {
-  display: block;
-  width: 100%;
-  background: #ACE6C0; }
-
-.menu_bar .bt-menu {
-  display: block;
-  padding: 20px;
-  background: #F57170;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 25px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-.menu_bar span {
-  float: right;
-  font-size: 20px; }
-
 p {
   text-align: justify; }
+
+.toggle-nav {
+  display: none; }
+
+.menu ul {
+  display: inline-block; }
+
+.menu li {
+  margin: 0px 20px 0px 0px;
+  float: left;
+  list-style: none;
+  font-size: 17px; }
+
+.menu li:last-child {
+  margin-right: 0px; }
+
+.menu a {
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+  color: #777;
+  transition: color linear 0.15s; }
+
+.menu a:hover, .menu .current-item a {
+  text-decoration: none;
+  color: #66a992; }
 
 @media screen and (min-width: 800px) {
   body {
     padding: 0em 3em;
-    background-color: #eee; } }
+    background-color: #eee; }
+  .menu {
+    width: 100%;
+    padding: 10px 18px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    background: #303030;
+    display: inline-block;
+    position: relative; }
+  .menu ul.active {
+    display: none; }
+  .menu ul {
+    width: 100%;
+    position: absolute;
+    top: 120%;
+    left: 0px;
+    padding: 10px 18px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    background: #303030; }
+  .menu ul:after {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 0%;
+    left: 22px;
+    content: '';
+    transform: translate(0%, -100%);
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #303030; }
+  .menu li {
+    margin: 5px 0px 5px 0px;
+    float: none;
+    display: block; }
+  .menu a {
+    display: block; }
+  .toggle-nav {
+    padding: 20px;
+    float: left;
+    display: inline-block;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    background: #303030;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+    color: #777;
+    font-size: 20px;
+    transition: color linear 0.15s; }
+  .toggle-nav:hover, .toggle-nav.active {
+    text-decoration: none;
+    color: #66a992; } }

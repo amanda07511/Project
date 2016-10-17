@@ -1,27 +1,12 @@
-$(document).ready(main);
  
-var contador = 1;
+jQuery(document).ready(function() {
+    jQuery('.toggle-nav').click(function(e) {
+        jQuery(this).toggleClass('active');
+        jQuery('.menu ul').toggleClass('active');
  
-function main () {
-	$('.menu_bar').click(function(){
-		if (contador == 1) {
-			$('nav').animate({
-				left: '0'
-			});
-			contador = 0;
-		} else {
-			contador = 1;
-			$('nav').animate({
-				left: '49'
-			});
-		}
-	});
- 
-	// Mostramos y ocultamos submenus
-	$('.submenu').click(function(){
-		$(this).children('.children').slideToggle();
-	});
-}
+        e.preventDefault();
+    });
+});
 
 $( "a" ).click(function( event ) {
   event.preventDefault();
