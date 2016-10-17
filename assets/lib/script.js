@@ -12,7 +12,7 @@ function main () {
 		} else {
 			contador = 1;
 			$('nav').animate({
-				left: '-100%'
+				left: '49'
 			});
 		}
 	});
@@ -22,3 +22,10 @@ function main () {
 		$(this).children('.children').slideToggle();
 	});
 }
+
+$( "a" ).click(function( event ) {
+  event.preventDefault();
+  $( "<div>" )
+    .append( "default " + event.type + " prevented" )
+    .appendTo( "#log" );
+});
